@@ -1,0 +1,29 @@
+$primary: $k5next-primary;
+$light: $k5next-light;
+$accent: $k5next-accent;
+$warn: $k5next-warn;
+
+:root {
+  --color-primary: #{map-get($primary, 500)};
+  --color-primary-50: #{map-get($primary, 50)};
+  --color-primary-100: #{map-get($primary, 100)};
+  --color-primary-200: #{map-get($primary, 200)};
+  --color-primary-300: #{map-get($primary, 300)};
+  --color-primary-400: #{map-get($primary, 400)};
+  --color-primary-500: #{map-get($primary, 500)};
+  --color-primary-600: #{map-get($primary, 600)};
+  --color-primary-700: #{map-get($primary, 700)};
+  --color-primary-800: #{map-get($primary, 800)};
+  --color-primary-900: #{map-get($primary, 900)};
+  --color-primary-A100: #{map-get($primary, A100)};
+  --color-primary-A200: #{map-get($primary, A200)};
+  --color-primary-A400: #{map-get($primary, A400)};
+  --color-primary-A700: #{map-get($primary, A700)};
+  --color-light: #{map-get($light, 500)};
+  --color-accent: #{map-get($accent, 500)};
+  --color-warn: #{map-get($warn, 500)};
+  --color-table-hover: var(--color-primary-100);
+  --sidenav-open-width: 20rem;
+  --sidenav-collapse-width: 5rem;
+  --sidenav-close-width: 0rem;
+}

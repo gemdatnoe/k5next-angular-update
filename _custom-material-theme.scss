@@ -1,0 +1,70 @@
+@use "@angular/material" as mat;
+@import "./custom-material-palettes";
+
+@include mat.core();
+
+// Custom color config
+$k5next-primary: mat.define-palette($k5next-petrol);
+$k5next-accent: mat.define-palette($k5next-gray);
+$k5next-light: mat.define-palette($k5next-lightgray);
+$k5next-warn: mat.define-palette(mat.$red-palette);
+
+// Custom typography config
+$k5next-typography: mat.define-typography-config(
+  $font-family: "Source Sans Pro, sans-serif",
+);
+
+// Override light theme
+$k5next-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $k5next-primary,
+      accent: $k5next-accent,
+      warn: $k5next-warn,
+      light: $k5next-light,
+    ),
+    typography: $k5next-typography,
+    density: 0,
+  )
+);
+
+@include mat.all-component-themes($k5next-theme);
+
+// Global custom classes
+.primary {
+  color: mat.get-color-from-palette($k5next-primary, 500);
+}
+
+.light {
+  color: mat.get-color-from-palette($k5next-light, 500);
+}
+
+.accent {
+  color: mat.get-color-from-palette($k5next-accent, 500);
+}
+
+.warn {
+  color: mat.get-color-from-palette($k5next-warn, 500);
+}
+
+.k5next-mat-menu-panel-reset {
+  background: none !important;
+  box-shadow: none !important;
+  overflow: unset !important;
+}
+
+.mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: white !important;
+  --mdc-snackbar-supporting-text-color: black !important;
+  --mdc-snackbar-supporting-text-line-height: 24px !important;
+  --mdc-snackbar-supporting-text-size: 16px !important;
+}
+
+.icon-button-4 {
+  @include mat.icon-button-density(-4);
+  --mdc-icon-button-icon-size: 16px;
+}
+
+.table-4 {
+  @include mat.table-density(-4);
+}
