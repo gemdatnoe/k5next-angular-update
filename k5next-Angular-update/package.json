@@ -1,6 +1,6 @@
 {
-  "name": "@gemdatnoe/angular-material-theme",
-  "version": "0.0.1",
+  "name": "@gemdatnoe/k5next-theme",
+  "version": "0.0.2",
   "description": "K5next-Theme",
   "author": "",
   "contributors": [],
@@ -21,6 +21,6 @@
     "url": "https://github.com/gemdatnoe/k5next-angular-update.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@gemdatnoe"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
