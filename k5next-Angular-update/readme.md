@@ -1,8 +1,3 @@
-# Angular Material Theme Test Repository
-
-Dieses Repo ist zum testen eines eigenen Angular Themes.
-
-
 ## Installation
 
 * Theme mittels npm `npm install @gemdatnoe/k5next-angular-update` installieren.
