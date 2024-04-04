@@ -1,0 +1,86 @@
+@use '@angular/material' as mat;
+@use 'sass:meta';
+@use 'sass:map';
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+@import "variables";
+@import "color-palettes";
+@import "typography";
+
+@mixin k5next($themeFun: map.get(meta.module-functions(mat), "define-light-theme")) {
+
+  $custom-density: 0 !default;
+  $custom-typography: mat.define-typography-config(
+          $font-family: quoteFontFamily($custom-font-family)
+  ) !default;
+  $custom-colors: (
+          primary: $custom-primary,
+          accent: $custom-accent,
+          warn: $custom-warn,
+          light: $custom-light,
+  ) !default;
+
+  $custom-theme: meta.call($themeFun, (
+          color: $custom-colors,
+          typography: $custom-typography,
+          density: $custom-density));
+
+  @include mat.all-component-themes($custom-theme);
+
+  @include mat.all-component-typographies($custom-typography);
+
+  body {
+    font-family: $custom-font-family;
+  }
+
+    // Custom dense mat-list
+    .dense-mat-list {
+      @include mat.list-density(-2);
+      @include mat.list-typography(
+        mat.define-typography-config(
+          $body-1:
+            mat.define-typography-level(
+              $font-family: "Source Sans Pro, sans-serif",
+              $font-weight: 400,
+              $font-size: 12px,
+              $line-height: 1,
+              $letter-spacing: normal
+            )
+        )
+      );
+    }
+  
+    .dense-mat-table {
+      @include mat.table-density(-3);
+    }
+  
+    .mat-menu-panel-reset {
+      background: none !important;
+      box-shadow: none !important;
+      overflow: unset !important;
+    }
+  
+    // Default classes
+    .primary {
+      color: mat.get-color-from-palette($custom-primary, 500);
+    }
+  
+    .light {
+      color: mat.get-color-from-palette($custom-light, 500);
+    }
+  
+    .accent {
+      color: mat.get-color-from-palette($custom-accent, 500);
+    }
+  
+    .warn {
+      color: mat.get-color-from-palette($custom-warn, 500);
+    }
+}
+
+@mixin k5next-dark-theme() {
+  @include k5next(map.get(meta.module-functions(mat), "define-dark-theme"));
+}

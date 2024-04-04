@@ -1,0 +1,8 @@
+@import "@fontsource/noto-sans";
+
+// should be one string because it will be send to unquote function
+$custom-font-family:  'Source Sans Pro', 'sans-serif' !default;
+
+@function quoteFontFamily($font-family: $custom-font-family) {
+  @return "#{$font-family}";
+}

@@ -1,3 +1,10 @@
+@import "color-palettes";
+
+$custom-primary: mat.define-palette($k5next-petrol) !default;
+$custom-light: mat.define-palette($k5next-lightgray);
+$custom-accent: mat.define-palette(mat.$grey-palette) !default;
+$custom-warn: mat.define-palette(mat.$red-palette) !default;
+
 $primary: $k5next-primary;
 $light: $k5next-light;
 $accent: $k5next-accent;
