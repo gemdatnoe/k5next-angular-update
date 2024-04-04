@@ -5,7 +5,7 @@ Dieses Repo ist zum testen eines eigenen Angular Themes.
 
 ## Installation
 
-* Theme mittels npm `npm install @gemdatnoe/angular-material-theme` installieren.
+* Theme mittels npm `npm install @gemdatnoe/k5next-angular-update` installieren.
 * Folgenden Code in die globale styles.scss hinzufügen:
   ```scss
   @import '@gemdatnoe/angular-material-theme/src/styling/theme';
