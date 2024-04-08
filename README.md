@@ -1,6 +1,6 @@
 ## Installation
 
-* Theme mittels npm `npm install k5next-theme-v2` installieren.
+* Theme mittels npm `npm install @gemdatnoe/k5next-theme-v2` installieren.
 * Folgenden Code in die globale styles.scss hinzufügen:
   ```scss
   @import '@gemdatnoe/angular-material-theme/src/styling/theme';
