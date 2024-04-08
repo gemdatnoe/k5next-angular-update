@@ -1,15 +1,10 @@
 ## Installation
 
-* Theme mittels npm `npm install @gemdatnoe/k5next-angular-update` installieren.
+* Theme mittels npm `npm install k5next-theme-v2` installieren.
 * Folgenden Code in die globale styles.scss hinzufügen:
   ```scss
   @import '@gemdatnoe/angular-material-theme/src/styling/theme';
   
-  @include tst-angular-material-theme();
-  // Für dark theme @include tst-angular-material-dark-theme() verwenden
-  // @include tst-angular-material-dark-theme();
-  ```
-
 ## Custom Angular Theme erstellen
 In Angular kann ein Custom Theme erstellen werden, um das Erscheinungsbild der Anwendung zu steuern.
 Folgende Bereiche können mit einem Custom Theme definiert werden:
