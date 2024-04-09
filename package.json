@@ -21,7 +21,7 @@
     "url": "git+https://github.com/gemdatnoe/k5next-theme-v2.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/gemdatnoe"
+    "registry": "https://npm.pkg.github.com/"
   },
   "bugs": {
     "url": "https://github.com/gemdatnoe/k5next-theme-v2/issues"
