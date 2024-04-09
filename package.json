@@ -1,11 +1,11 @@
 {
-  "name": "@gemdatnoe/k5next-theme",
+  "name": "k5next-theme",
   "version": "0.0.7",
   "description": "K5next-Theme",
   "author": "",
   "contributors": [],
-  "homepage": "",
-  "license": "",
+  "homepage": "https://github.com/k5next-theme-v2#readme",
+  "license": "ISC",
   "dependencies": {
     "@fontsource/noto-sans": "^4.5.11"
   },
@@ -18,9 +18,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gemdatnoe/k5next-theme-v2.git"
+    "url": "git+https://github.com/gemdatnoe/k5next-theme-v2.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/gemdatnoe/k5next-theme-v2/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
