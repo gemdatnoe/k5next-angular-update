@@ -1,10 +1,10 @@
 {
   "name": "k5next-theme-v2",
   "version": "0.0.8",
-  "description": "K5next-Theme",
+  "description": "k5next-theme",
   "author": "",
   "contributors": [],
-  "homepage": "https://github.com/k5next-theme-v2#readme",
+  "homepage": "https://github.com/k5next-theme-v2",
   "license": "ISC",
   "dependencies": {
     "@fontsource/noto-sans": "^4.5.11"
@@ -21,7 +21,7 @@
     "url": "git+https://github.com/gemdatnoe/k5next-theme-v2.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/gemdatnoe/k5next-theme-v2"
   },
   "bugs": {
     "url": "https://github.com/gemdatnoe/k5next-theme-v2/issues"
